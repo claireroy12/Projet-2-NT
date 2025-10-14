@@ -24,7 +24,7 @@ for post in reddit.subreddit("QuebecLibre").top(limit=2500): # récupérer 3000 
     "upvote_ratio": float(post.upvote_ratio),
     "nb_commentaires": int(post.num_comments),
     "texte": post.selftext,
-    "date_creation": datetime.fromtimestamp(post.created_utc).strftime("%Y-%m-%d"),
+    "date_creation": datetime.fromtimestamp(post.created_utc),
     "url": post.url,
     "image_url": post.url if post.url.endswith((".jpg", ".png")) else None
     })
@@ -40,7 +40,7 @@ for post in reddit.subreddit("canada").top(limit=2500): # récupérer 3000 posts
     "upvote_ratio": float(post.upvote_ratio),
     "nb_commentaires": int(post.num_comments),
     "texte": post.selftext,
-    "date_creation": datetime.fromtimestamp(post.created_utc).strftime("%Y-%m-%d"),
+    "date_creation": datetime.fromtimestamp(post.created_utc),
     "url": post.url,
     "image_url": post.url if post.url.endswith((".jpg", ".png")) else None
     })
@@ -56,7 +56,7 @@ for post in reddit.subreddit("AskACanadian").top(limit=2500): # récupérer 3000
     "upvote_ratio": float(post.upvote_ratio),
     "nb_commentaires": int(post.num_comments),
     "texte": post.selftext,
-    "date_creation": datetime.fromtimestamp(post.created_utc).strftime("%Y-%m-%d"),
+    "date_creation": datetime.fromtimestamp(post.created_utc),
     "url": post.url,
     "image_url": post.url if post.url.endswith((".jpg", ".png")) else None
     })
@@ -72,7 +72,7 @@ for post in reddit.subreddit("PersonalFinanceCanada").top(limit=2500): # récup�
     "upvote_ratio": float(post.upvote_ratio),
     "nb_commentaires": int(post.num_comments),
     "texte": post.selftext,
-    "date_creation": datetime.fromtimestamp(post.created_utc).strftime("%Y-%m-%d"),
+    "date_creation": datetime.fromtimestamp(post.created_utc),
     "url": post.url,
     "image_url": post.url if post.url.endswith((".jpg", ".png")) else None
     })
@@ -88,7 +88,7 @@ for post in reddit.subreddit("Quebeccity").top(limit=2500): # récupérer 3000 p
     "upvote_ratio": float(post.upvote_ratio),
     "nb_commentaires": int(post.num_comments),
     "texte": post.selftext,
-    "date_creation": datetime.fromtimestamp(post.created_utc).strftime("%Y-%m-%d"),
+    "date_creation": datetime.fromtimestamp(post.created_utc),
     "url": post.url,
     "image_url": post.url if post.url.endswith((".jpg", ".png")) else None
     })
@@ -104,7 +104,7 @@ for post in reddit.subreddit("brossard").top(limit=2500): # récupérer 3000 pos
     "upvote_ratio": float(post.upvote_ratio),
     "nb_commentaires": int(post.num_comments),
     "texte": post.selftext,
-    "date_creation": datetime.fromtimestamp(post.created_utc).strftime("%Y-%m-%d"),
+    "date_creation": datetime.fromtimestamp(post.created_utc),
     "url": post.url,
     "image_url": post.url if post.url.endswith((".jpg", ".png")) else None
     })
@@ -120,7 +120,7 @@ for post in reddit.subreddit("CanadaPolitics").top(limit=2500): # récupérer 30
     "upvote_ratio": float(post.upvote_ratio),
     "nb_commentaires": int(post.num_comments),
     "texte": post.selftext,
-    "date_creation": datetime.fromtimestamp(post.created_utc).strftime("%Y-%m-%d"),
+    "date_creation": datetime.fromtimestamp(post.created_utc),
     "url": post.url,
     "image_url": post.url if post.url.endswith((".jpg", ".png")) else None
     })
@@ -139,7 +139,7 @@ for post in reddit.subreddit("Quebec").top(limit=2500): # récupérer 3000 posts
     "upvote_ratio": float(post.upvote_ratio),
     "nb_commentaires": int(post.num_comments),
     "texte": post.selftext,
-    "date_creation": datetime.fromtimestamp(post.created_utc).strftime("%Y-%m-%d"),
+    "date_creation": datetime.fromtimestamp(post.created_utc),
     "url": post.url,
     "image_url": post.url if post.url.endswith((".jpg", ".png")) else None
     })
@@ -155,7 +155,7 @@ for post in reddit.subreddit("QuebecFinance").top(limit=2500): # récupérer 300
     "upvote_ratio": float(post.upvote_ratio),
     "nb_commentaires": int(post.num_comments),
     "texte": post.selftext,
-    "date_creation": datetime.fromtimestamp(post.created_utc).strftime("%Y-%m-%d"),
+    "date_creation": datetime.fromtimestamp(post.created_utc),
     "url": post.url,
     "image_url": post.url if post.url.endswith((".jpg", ".png")) else None
     })
@@ -171,7 +171,7 @@ for post in reddit.subreddit("Montreal").top(limit=2500): # récupérer 3000 pos
     "upvote_ratio": float(post.upvote_ratio),
     "nb_commentaires": int(post.num_comments),
     "texte": post.selftext,
-    "date_creation": datetime.fromtimestamp(post.created_utc).strftime("%Y-%m-%d"),
+    "date_creation": datetime.fromtimestamp(post.created_utc),
     "url": post.url,
     "image_url": post.url if post.url.endswith((".jpg", ".png")) else None
     })
@@ -188,7 +188,7 @@ for post in reddit.subreddit("Sherbrooke").top(limit=2500): # récupérer 3000 p
     "upvote_ratio": float(post.upvote_ratio),
     "nb_commentaires": int(post.num_comments),
     "texte": post.selftext,
-    "date_creation": datetime.fromtimestamp(post.created_utc).strftime("%Y-%m-%d"),
+    "date_creation": datetime.fromtimestamp(post.created_utc),
     "url": post.url,
     "image_url": post.url if post.url.endswith((".jpg", ".png")) else None
     })
@@ -204,7 +204,7 @@ for post in reddit.subreddit("troisrivieres").top(limit=2500): # récupérer 300
     "upvote_ratio": float(post.upvote_ratio),
     "nb_commentaires": int(post.num_comments),
     "texte": post.selftext,
-    "date_creation": datetime.fromtimestamp(post.created_utc).strftime("%Y-%m-%d"),
+    "date_creation": datetime.fromtimestamp(post.created_utc),
     "url": post.url,
     "image_url": post.url if post.url.endswith((".jpg", ".png")) else None
     })
@@ -220,7 +220,7 @@ for post in reddit.subreddit("Rimouski").top(limit=2500): # récupérer 3000 pos
     "upvote_ratio": float(post.upvote_ratio),
     "nb_commentaires": int(post.num_comments),
     "texte": post.selftext,
-    "date_creation": datetime.fromtimestamp(post.created_utc).strftime("%Y-%m-%d"),
+    "date_creation": datetime.fromtimestamp(post.created_utc),
     "url": post.url,
     "image_url": post.url if post.url.endswith((".jpg", ".png")) else None
     })
@@ -236,7 +236,7 @@ for post in reddit.subreddit("Laval").top(limit=2500): # récupérer 3000 posts 
     "upvote_ratio": float(post.upvote_ratio),
     "nb_commentaires": int(post.num_comments),
     "texte": post.selftext,
-    "date_creation": datetime.fromtimestamp(post.created_utc).strftime("%Y-%m-%d"),
+    "date_creation": datetime.fromtimestamp(post.created_utc),
     "url": post.url,
     "image_url": post.url if post.url.endswith((".jpg", ".png")) else None
     })
