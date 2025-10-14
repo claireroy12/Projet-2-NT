@@ -245,5 +245,5 @@ for post in reddit.subreddit("Laval").top(limit=2500): # récupérer 3000 posts 
 
 
 # Export CSV
-pd.DataFrame(posts).to_csv("Projet-2-NT/posts.csv", index=False, encoding="utf-8-sig", sep=";")
+pd.DataFrame(posts).to_csv("posts.csv", index=False, encoding="utf-8-sig", sep=";")
 print("Exporté posts.csv! :)")
